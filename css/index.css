@@ -78,6 +78,27 @@ a {
   margin-left:-2px;
 }
 
+.small {
+  font-size: 7px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.left {
+  width: 35%;
+}
+.right {
+  width: 65%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .upside-down {
   transform: rotate(180deg);
 }
