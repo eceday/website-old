@@ -636,6 +636,24 @@ a {
   background-position: center;
 }
 
+.tabling {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../graphics/tabling.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.depth {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../graphics/depth.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fun-stuff {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../graphics/fun-stuff.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .research {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../graphics/research.jpg");
   background-size: cover;
