@@ -137,8 +137,8 @@ jQuery(document).ready(function($){
 			var eventTop = event.offset().top - $(window).scrollTop(),
 				eventLeft = event.offset().left,
 				eventHeight = event.innerHeight(),
-				eventWidth = event.innerWidth();
-
+				eventWidth = event.parent('li').parent('ul').parent('li').innerWidth();
+			
 			var windowWidth = $(window).width(),
 				windowHeight = $(window).height();
 

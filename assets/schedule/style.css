@@ -219,7 +219,21 @@ a {
     /* reset style */
     display: none;
   }
-  .cd-schedule .events .single-event {
+  .cd-schedule .events .single-event.long {
+    position: absolute;
+    z-index: 3;
+    /* top position and height will be set using js */
+    width: calc(400% + 8px);
+    left: -1px;
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 -3px 0 rgba(0, 0, 0, 0.2);*/
+    /* reset style */
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    height: auto;
+    max-width: none;
+    margin-right: 0;
+  }
+  .cd-schedule .events .single-event.short {
     position: absolute;
     z-index: 3;
     /* top position and height will be set using js */
@@ -230,7 +244,7 @@ a {
     -ms-flex-negative: 1;
         flex-shrink: 1;
     height: auto;
-    max-width: none;
+    max-width: calc(300% + 6px);
     margin-right: 0;
   }
   .cd-schedule .events .single-event a {
