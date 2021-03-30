@@ -66,7 +66,31 @@ jQuery(document).ready(function($){
 
 		this.singleEvents.each(function(){
 			//create the .event-date element for each event
-			var durationLabel = '<span class="event-date">'+$(this).data('start')+' - '+$(this).data('end')+' PST</span>';
+			var start = $(this).data('start');
+			var start1 = start[0];
+			var start2 = start[1];
+			
+			var end = $(this).data('end');
+			var end1 = end[0];
+			var end2 = end[1];
+			if(start1 == 1 && start2 > 2) {
+				start1--;
+				start2-= 2;
+				end1--;
+				end2-= 2;
+			} else {
+				if(end1 == 1 && end2 > 2) {
+					end1--;
+					end2-= 2;
+				}
+			}
+			start[0] = start1;
+			start[1] = start2;
+			end[0] = end1;
+			end[1] = end2;
+			var s = ''+start1 + start2 +start[2]+start[3]+start[4];
+			var e = ''+end1 + end2 +end[2]+end[3]+end[4];
+			var durationLabel = '<span class="event-date">'+s+' - '+e+' PST</span>';
 			$(this).children('a').prepend($(durationLabel));
 
 			//detect click on the event and open the modal
