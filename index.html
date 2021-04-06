@@ -30,18 +30,33 @@
 
   <!-- Title Screen -->
   <div class="title">
+    
     <div class="container w-100 h-100">
-      <div class="row align-items-center h-100">
+      <div class="row align-items-center h-80">
         <div class="col-sm-7">
           <img src="assets/graphics/ece-day.png" class="ece-day-splash animated pulse infinite slow">
         </div>
         <div class="col-sm-5 center">
           <img src="assets/graphics/ece-day-logo.png" class="logo">
+        </div>
+      </div>
+      <div class="row align-items-center h-20">
+        <div class="col-sm-3 center">
           
         </div>
+        <div class="col-sm-6 center">
+           <button class="btn-gather" 
+           id="btn-gather"
+           
+           style="font-size: 64px; background: white; border: 2px solid black;">
+              Gather Link
+          </button>
+         </div>
+      </div>
       </div>
     </div>
     <!-- Put gather.town link here -->
+    
     <div class="triangle animated bounce infinite">
     </div>
     <div class="arrow">
@@ -350,6 +365,16 @@
   </div>
 
   <!-- Wow.js CDN -->
+  <script>
+    window.onload = function () {
+      var now = new Date();
+      var dateLimit = new Date("2021-04-07T11:30:00")
+      if (now < dateLimit){
+          document.getElementById("btn-gather").disabled = true;
+      }
+    }       
+  </script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
   <script>
   new WOW().init();
