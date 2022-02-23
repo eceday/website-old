@@ -16,7 +16,7 @@ function App() {
       <section className='concrete-background'>
         <h2>What is ECE Day?</h2>
         <p>
-          ECE Day is a day dedicated to celebrating the spirit of Electrical and Computer Engineering and bringing awareness of all that it offers to its students, faculty, and beloved alumni. Throughout the day, there will be many opportunities for students to learn virtually about the numerous exciting fields within ECE and the joys of being a part of the ECE family!   .
+          ECE Day is a day dedicated to celebrating the spirit of Electrical and Computer Engineering and bringing awareness of all that it offers to its students, faculty, and beloved alumni. Throughout the day, there will be many opportunities for students to learn virtually about the numerous exciting fields within ECE and the joys of being a part of the ECE family!
         </p>
       </section>
       <section className='grass-background'>
