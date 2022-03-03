@@ -2,11 +2,12 @@ import {Fragment} from 'react';
 import Accordion from './components/Accordion/';
 import logo from './logo.svg';
 import './App.css';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <Fragment>
-      <div className='nav-placeholder'></div>
+      <Nav/>
       <div className='hero-img'>
         <svg></svg>
         <div className='location-float'>
