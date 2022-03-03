@@ -2,7 +2,7 @@ import {Fragment} from 'react';
 import Accordion from './components/Accordion/';
 import logo from './logo.svg';
 import './App.css';
-import Nav from './components/Nav';
+import Nav from './components/Heading';
 
 function App() {
   return (
