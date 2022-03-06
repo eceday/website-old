@@ -18,11 +18,11 @@ function Heading(props) {
       top: 0,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.5,
+        staggerChildren: 0.1,
       },
     },
     closed: {
-      top: "-90vh",
+      top: "-100vh",
     },
   };
 
@@ -59,9 +59,10 @@ function Heading(props) {
         variants={menuVariants}
         animate={isOpen ? "opened" : "closed"}
       >
-        <Link  variants={linkVariants}><a href="https://www.youtube.com/watch?v=iik25wqIuFo">Home</a></Link>
-        <Link  variants={linkVariants}><a href="https://www.youtube.com/watch?v=iik25wqIuFo">About</a></Link>
-        <Link  variants={linkVariants}><a href="https://www.youtube.com/watch?v=iik25wqIuFo">Gallery</a></Link>
+        <Link  variants={linkVariants}><a href="#about" onClick={() => setIsOpen(!isOpen)}><h1>About</h1></a></Link>
+        <Link  variants={linkVariants}><a href="#schedule" onClick={() => setIsOpen(!isOpen)}><h1>Schedule</h1></a></Link>
+        <Link  variants={linkVariants}><a href="#faq" onClick={() => setIsOpen(!isOpen)}><h1>FAQ</h1></a></Link>
+        <Link  variants={linkVariants}><a href="#contact" onClick={() => setIsOpen(!isOpen)}><h1>Contact</h1></a></Link>
       </Nav>
     </div>
   );

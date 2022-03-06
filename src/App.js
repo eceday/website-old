@@ -15,17 +15,17 @@ function App() {
         </div>
       </div>
       <section className='concrete-background'>
-        <h2>What is ECE Day?</h2>
+        <h2 id='about'>What is ECE Day?</h2>
         <p>
           ECE Day is a day dedicated to celebrating the spirit of Electrical and Computer Engineering and bringing awareness of all that it offers to its students, faculty, and beloved alumni. Throughout the day, there will be many opportunities for students to learn virtually about the numerous exciting fields within ECE and the joys of being a part of the ECE family!
         </p>
       </section>
       <section className='grass-background'>
-        <h2>What's happening?</h2>
-        <div className='schedule-placeholder'></div>
+        <h2 id='schedule'>What's happening?</h2>
+        <div className='schedule-placeholder' style={{height:'500px'}}></div>
       </section>
       <section className='concrete-background'>
-        <h2> Frequently Asked Questions</h2>
+        <h2 id='faq'> Frequently Asked Questions</h2>
         <Accordion title={"Will this be online or in person?"} 
           content={"We will be in person at UCSD all day! "} 
           initial_open={true}/>
@@ -44,7 +44,7 @@ function App() {
         <h2>Brought to you by:</h2>
       </section>
       <div className='contact-float'>
-        <div>have a question? contact us!</div>
+        <div id='contact'>have a question? contact us!</div>
         {/* email link here */}
       </div>
     </Fragment>

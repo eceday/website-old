@@ -24,7 +24,9 @@ function Accordion(props) {
                     }}
                     transition={{ duration: 0.8, ease: [0.00, 0.62, 0.23, 1] }}
                     className={styles.content}>
+                    <p>
                     {props.content}
+                    </p>
                 </motion.section>}
             </AnimatePresence>
         </motion.div>
