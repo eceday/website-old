@@ -10,7 +10,7 @@ function Accordion(props) {
         <motion.div className={styles.shell}>
             <motion.button className={styles.title} onClick={AccordionHandler}>
                 {props.title}
-                <motion.div className={styles.plus} whileHover={{ scale: 1.1 }}>{(active)?"+":"-"}</motion.div>
+                <motion.div className={styles.plus} whileHover={{ scale: 1.1 }}>{(active)?"-":"+"}</motion.div>
             </motion.button>
             <AnimatePresence initial={false}>
                 {active && <motion.section 

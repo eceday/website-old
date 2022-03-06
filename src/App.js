@@ -26,8 +26,7 @@ function App() {
       </section>
       <section className='concrete-background'>
         <h2> Frequently Asked Questions</h2>
-        {/* TODO \: implement accordion logic */}
-        <Accordion title={"Will is be online or in person?"} 
+        <Accordion title={"Will this be online or in person?"} 
           content={"We will be in person at UCSD all day! "} 
           initial_open={true}/>
         <Accordion title={"Is this a recruiting event?"} 
