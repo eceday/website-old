@@ -3,15 +3,17 @@ import Accordion from './components/Accordion/';
 import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Heading';
+import {ReactComponent as BearGraphic} from './assets/svgs/Bear Graphic Full.svg';
+
 
 function App() {
   return (
     <Fragment>
       <Nav/>
       <div className='hero-img'>
-        <svg></svg>
+        <BearGraphic className='bear-graphic'/>
         <div className='location-float'>
-          Warren Bear
+          warren bear
         </div>
       </div>
       <section className='concrete-background'>

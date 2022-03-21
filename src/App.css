@@ -12,7 +12,12 @@
 html{
     scroll-behavior: smooth;
 }
-
+h2{
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
 body,section,p,div{
     margin:0;
     padding:0;
@@ -27,7 +32,43 @@ body{
 section{
     padding-inline:10px;
 }
-
+.hero-img{
+    position:relative;
+    width: 100%;
+    overflow-x:hidden;
+    height: min-content;
+}
+@media screen and (max-width:720px){
+    .hero-img{
+        padding-top:5%;
+    }
+}
+.bear-graphic{
+    position: relative;
+    width:100%;
+    height:auto;
+    min-height: 500px;
+    margin:0 auto;
+    clip: auto;
+}
+@media screen and (max-width:520px){
+    .hero-img{
+        padding-top:10%;
+    }
+    .bear-graphic{
+        left:-25%;
+        width:150%;
+        min-height: 300px;
+    }
+}
+    
+.location-float{    
+    /* display: inline; */
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .concrete-background{
     color:black;
     background-color: var(--sidewalk-grey);
