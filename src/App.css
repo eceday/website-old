@@ -72,15 +72,61 @@ section{
 .concrete-background{
     color:black;
     background-color: var(--sidewalk-grey);
+    margin-top: -100px;
 }
 
 .grass-background{
     color: var(--off-white);
     background-color: var(--grass-green);
+    margin-top: -100px;
 }
 
 a:-webkit-any-link{
     text-decoration: none;
     color: var(--off-white);
+}
+
+.about::before{
+    padding-top: 100px;
+    display:block;
+    content:"";
+    background-color: var(--blue);
+    z-index: 0;
+    margin-left: -1%;
+    margin-right: -1%;
+    overflow-x: hidden;
+}
+
+.schedule::before{
+    padding-top: 100px;
+    display:block;
+    content:"";
+    z-index: 0;
+    background-color: var(--sidewalk-grey);
+    margin-left: -1%;
+    margin-right: -1%;
+    overflow-x: hidden;
+}
+
+.faq::before{
+    padding-top: 100px;
+    display:block;
+    content:"";
+    background-color: var(--grass-green);
+    z-index: 0;
+    margin-left: -1%;
+    margin-right: -1%;
+    overflow-x: hidden;
+}
+
+.brought::before{
+    padding-top: 100px;
+    display:block;
+    content:"";
+    background-color: var(--sidewalk-grey);
+    z-index: 0;
+    margin-left: -1%;
+    margin-right: -1%;
+    overflow-x: hidden;
 }
 
