@@ -234,13 +234,18 @@ a:-webkit-any-link{
     }
 }
 
+
 .logos{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width:100%;
     max-width: 720px;
+}
+@media screen and (max-width:720px) {
+    .logos{
+        flex-wrap:wrap;
+    }
 }
 .logos>.ece{
     width:100%;

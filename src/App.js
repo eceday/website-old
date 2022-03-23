@@ -1,6 +1,5 @@
 import {Fragment} from 'react';
 import Accordion from './components/Accordion/';
-import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Nav';
 import {ReactComponent as BearGraphic} from './assets/svgs/Bear Graphic Full.svg';
