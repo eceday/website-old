@@ -5,8 +5,14 @@ import './App.css';
 import Nav from './components/Nav';
 import {ReactComponent as BearGraphic} from './assets/svgs/Bear Graphic Full.svg';
 import {ReactComponent as BearQuestion} from './assets/svgs/Bear Questionmark.svg';
-import {ReactComponent as Banner} from './assets/svgs/Banner.svg';
 import {ReactComponent as Pin} from './assets/svgs/Location Marker.svg';
+import {ReactComponent as IEEE} from './assets/svgs/IEEE Logo.svg';
+import {ReactComponent as ECEUSC} from './assets/svgs/ECE USC Logo.svg';
+import {ReactComponent as ECE} from './assets/svgs/UCSD ECE logo.svg';
+import {ReactComponent as ACM} from './assets/svgs/ACM Logo.svg';
+import {ReactComponent as HKN} from './assets/svgs/HKN Logo.svg';
+import {ReactComponent as PIB} from './assets/svgs/PIB Logo.svg';
+import {ReactComponent as TBP} from './assets/svgs/TBP Logo.svg';
 
 
 function App() {
@@ -58,6 +64,15 @@ function App() {
       </section>
       <section className='grass-background'>
         <h2 className='brought'>Brought to you by:</h2>
+        <div className='logos'>
+          <ECE className='ece'/>
+          <IEEE/>
+          <ECEUSC/>
+          <HKN/>
+          <ACM/>
+          <PIB/>
+          <TBP/>
+        </div>
       </section>
       <div className='contact-float'>
         <div id='contact'>have a question? contact us!</div>

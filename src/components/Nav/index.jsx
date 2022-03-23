@@ -1,9 +1,10 @@
 import styles from './nav.module.css';
-import React, { useState } from "react";
+import React, { useState, Fragment, useEffect } from "react";
 import { Header, Nav, Link, SvgBox } from "./Styles";
 function Heading(props) {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-
+  
   const iconVariants = {
     opened: {
       rotate: 90,
@@ -36,6 +37,24 @@ function Heading(props) {
       y: 0,
     },
   };
+  const handleScroll = () => {
+    // find current scroll position
+    const currentScrollPos = window.pageYOffset;
+
+    // set state based on location info (explained in more detail below)
+    // setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+    console.log(currentScrollPos)
+    // set state to new scroll position
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+
+  }, [prevScrollPos,  handleScroll]);
+
   const linkHandler = (event) => {
     event.preventDefault()
     event.nativeEvent.stopImmediatePropagation();
@@ -49,7 +68,7 @@ function Heading(props) {
     console.log(absoluteElementTop,middle)
     window.scrollTo(0, middle);
   }
-  return (
+  return <Fragment>
     <div className="Heading">
       <Header>
         <SvgBox
@@ -77,7 +96,30 @@ function Heading(props) {
         <Link  variants={linkVariants}><a className={styles.nav_link} href="#contact" onClick={linkHandler}>Contact</a></Link>
       </Nav>
     </div>
-  );
+    <div className='title' style={(prevScrollPos<500 || isOpen)?{'position':'absolute'}:
+      {
+        'position':'sticky',
+        'top':'10px',
+        'padding-left':'5%',
+        'display':'flex',
+        'flexDirection':(window.innerWidth<520)?'column':'row',
+        'width':'fit-content'
+      }
+    }>
+      <h1 style={(prevScrollPos<500)?{}:{"fontSize":"3rem"}}
+      
+      >ECE DAY</h1>
+      <h2 style={(prevScrollPos<500)?{}:
+      {
+        "fontSize":"3rem",
+        'left':0,
+        'position':'initial',
+        'margin-left':'10px',
+        'display':(window.innerWidth<520 && !isOpen)?'none':'block'
+      }
+      }>4.8.2022</h2>
+    </div>
+  </Fragment>;
 }
 
 export default Heading;

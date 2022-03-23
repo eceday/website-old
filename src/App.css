@@ -8,7 +8,7 @@
     --grass-green: #82942E;
     --grass-green-dark: #776F0D;
     --font-logo:3rem;
-    --font-h1:clamp(1rem,2vw,2.5rem);
+    --font-h1:2vw;
     --font-h2:1.5rem;
     --font-h3:1.25rem;
     --font-reg:1rem;
@@ -68,12 +68,67 @@ a:-webkit-any-link{
     color: var(--off-white);
     text-decoration: none;
 }
+.title{
+    z-index: 3;
+    position: absolute;
+    left:20px;
+    top:20px;
+    /* transform: translate(-50%); */
+    filter: drop-shadow(7px 7px 0px var(--blue-dark));
+}
+
+.title>h1{
+    width:max-content;
+    height: min-content;
+    color:var(--off-white);
+    margin:0;
+    font-size: clamp(100px,calc(6*var(--font-h1)),150px);
+}
+
+.title>h2{
+    position: relative;
+    margin:0;
+    text-align: center;
+    left:35%;
+    color:var(--ucsd-yellow);
+    font-size: calc(3*var(--font-h1));
+    width:min-content;
+}
+@media screen and (max-width:640px) {
+    .title>h1{
+        font-size: clamp(50px,15vw,calc(6*var(--font-h1)));
+    }
+    .title>h2{
+        left:clamp(5vw,30%,100px);
+        font-size: clamp(40px,10vw,calc(3*var(--font-h1)));
+    }
+}
+
+
+@media screen and (min-width:720px) {
+    .title{
+        display: flex;
+    }
+    .title>h2{
+        left:0;
+        margin-block:auto;
+    }
+}
+@media screen and (min-width:1350px) {
+    .title>h2{
+        margin-left: 20px;
+        font-size: clamp(100px,calc(6*var(--font-h1)),150px);
+    }
+}
 /* hero-image formatting */
 .hero-img{
     position: relative;
     width: 100%;
-    padding-top:100px;
+    padding-top:clamp(100px,25%,200px);
 }
+/* @media screen (min-width:420px) {
+    
+} */
 .hero-frame{
     display: flex;
     flex-direction: column;
@@ -95,7 +150,6 @@ a:-webkit-any-link{
 }
 @media screen and (max-width:720px) {
     .bear-graphic{
-        /* min-height: 600px; */
         width: 720px;
     }
 }
@@ -180,4 +234,18 @@ a:-webkit-any-link{
     }
 }
 
-
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+}
+.logos>.ece{
+    width:100%;
+    max-width: 100%;
+}
+.logos>*{
+    height: fit-content;
+    max-width: 40%;
+    padding: 10px;
+}
