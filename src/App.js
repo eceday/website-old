@@ -39,7 +39,16 @@ function App() {
       </section>
       <section className='grass-background'>
         <h2 id='schedule' className='schedule'>What's happening?</h2>
-        <div className='schedule-placeholder' style={{height:'500px'}}></div>
+        <iframe 
+         title='Schedule'
+         src="https://calendar.google.com/calendar/embed?src=eceday%40eng.ucsd.edu&ctz=America%2FLos_Angeles&mode=AGENDA&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=1&bgcolor=%2382942e&title=ECE%20Day%20Schedule"
+         height='500px'
+         width='67%'
+         scrolling='no'
+         
+         >
+        </iframe>
+      
       </section>
       <section className='concrete-background'>
         <h2 id='faq' className='faq'> Frequently Asked Questions</h2>
