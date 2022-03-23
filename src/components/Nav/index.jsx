@@ -43,7 +43,6 @@ function Heading(props) {
 
     // set state based on location info (explained in more detail below)
     // setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
-    console.log(currentScrollPos)
     // set state to new scroll position
     setPrevScrollPos(currentScrollPos);
   };
@@ -120,6 +119,6 @@ function Heading(props) {
       }>4.8.2022</h2>
     </div>
   </Fragment>;
-}
+  }
 
 export default Heading;

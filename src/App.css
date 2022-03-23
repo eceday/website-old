@@ -238,11 +238,13 @@ a:-webkit-any-link{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     width:100%;
+    max-width: 720px;
 }
 .logos>.ece{
     width:100%;
-    max-width: 100%;
+    max-width: 720px;
 }
 .logos>*{
     height: fit-content;
