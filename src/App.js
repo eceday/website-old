@@ -2,8 +2,11 @@ import {Fragment} from 'react';
 import Accordion from './components/Accordion/';
 import logo from './logo.svg';
 import './App.css';
-import Nav from './components/Heading';
+import Nav from './components/Nav';
 import {ReactComponent as BearGraphic} from './assets/svgs/Bear Graphic Full.svg';
+import {ReactComponent as BearQuestion} from './assets/svgs/Bear Questionmark.svg';
+import {ReactComponent as Banner} from './assets/svgs/Banner.svg';
+import {ReactComponent as Pin} from './assets/svgs/Location Marker.svg';
 
 
 function App() {
@@ -11,9 +14,16 @@ function App() {
     <Fragment>
       <Nav/>
       <div className='hero-img'>
-        <BearGraphic className='bear-graphic'/>
+        <div className='hero-frame'>
+          <BearGraphic className='bear-graphic'/>
+        </div>
         <div className='location-float'>
-          warren bear
+          <div className='location-wrapper'>
+              <h1>
+                Warren Bear
+              </h1>
+          </div>
+          <Pin className='pin'/>
         </div>
       </div>
       <section className='concrete-background'>
@@ -28,26 +38,32 @@ function App() {
       </section>
       <section className='concrete-background'>
         <h2 id='faq' className='faq'> Frequently Asked Questions</h2>
-        <Accordion title={"Will this be online or in person?"} 
-          content={"We will be in person at UCSD all day! "} 
-          initial_open={true}/>
-        <Accordion title={"Is this a recruiting event?"} 
-          content={"This is not explicitly a recruiting event. Furthermore, we haven't invited any companies to focus more on UCSD specific aspects."} 
-          />
-        <Accordion title={"Is there a cost to attend?"} 
-          content={"ECE Day is completely free for all students to attend!"} 
-          />
-        <Accordion title={"Who can come?"} 
-          content={"Everyone who is interested in ECE is encouraged to attend! You do not have to be a current or future ECE student!"} 
-          />
-        
+        <div className='faq-wrapper'>
+          <BearQuestion className='bear-question'/>
+          <div className='accordion-group'>
+            <Accordion title={"Will this be online or in person?"} 
+              content={"We will be in person at UCSD all day! "} 
+              initial_open={true}/>
+            <Accordion title={"Is this a recruiting event?"} 
+              content={"This is not explicitly a recruiting event. Furthermore, we haven't invited any companies to focus more on UCSD specific aspects."} 
+              />
+            <Accordion title={"Is there a cost to attend?"} 
+              content={"ECE Day is completely free for all students to attend!"} 
+              />
+            <Accordion title={"Who can come?"} 
+              content={"Everyone who is interested in ECE is encouraged to attend! You do not have to be a current or future ECE student!"} 
+              />
+          </div>
+        </div>
       </section>
       <section className='grass-background'>
         <h2 className='brought'>Brought to you by:</h2>
       </section>
       <div className='contact-float'>
         <div id='contact'>have a question? contact us!</div>
-        {/* email link here */}
+        <a href="mailto:eceday@eng.ucsd.edu">
+          email
+        </a>
       </div>
     </Fragment>
   );

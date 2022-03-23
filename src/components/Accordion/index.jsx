@@ -13,7 +13,7 @@ function Accordion(props) {
                 <motion.div className={styles.plus} whileHover={{ scale: 1.1 }}>{(active)?"-":"+"}</motion.div>
             </motion.button>
             <AnimatePresence initial={false}>
-                {active && <motion.section 
+                {active && <motion.div 
                     key="content"
                     initial="collapsed"
                     animate="open"
@@ -27,7 +27,7 @@ function Accordion(props) {
                     <p>
                     {props.content}
                     </p>
-                </motion.section>}
+                </motion.div>}
             </AnimatePresence>
         </motion.div>
     )
