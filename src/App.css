@@ -123,6 +123,8 @@ a:-webkit-any-link{
 /* calendar formatting */
 .calendar{
     width:stretch;
+    height:50vh;
+    max-height: 500px;    
 }
 /* hero-image formatting */
 .hero-img{
@@ -158,7 +160,7 @@ a:-webkit-any-link{
 @media screen and (max-width:720px) {
     .hero-frame{
         overflow-x: hidden;
-        
+
     }
     .bear-graphic{
         width: 720px;
