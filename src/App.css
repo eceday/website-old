@@ -23,7 +23,7 @@
 }
 html{
     scroll-behavior: smooth;
-
+    max-width: 100%;
 }
 h1{
     font-size: var(--font-h1);
@@ -119,6 +119,10 @@ a:-webkit-any-link{
         margin-left: 20px;
         font-size: clamp(100px,calc(6*var(--font-h1)),150px);
     }
+}
+/* calendar formatting */
+.calendar{
+    width:stretch;
 }
 /* hero-image formatting */
 .hero-img{

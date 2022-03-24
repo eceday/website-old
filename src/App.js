@@ -40,13 +40,11 @@ function App() {
       <section className='grass-background'>
         <h2 id='schedule' className='schedule'>What's happening?</h2>
         <iframe 
-         title='Schedule'
-         src="https://calendar.google.com/calendar/embed?src=eceday%40eng.ucsd.edu&ctz=America%2FLos_Angeles&mode=AGENDA&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=1&bgcolor=%2382942e&title=ECE%20Day%20Schedule"
-         height='500px'
-         width='67%'
-         scrolling='no'
-         
-         >
+          title='Schedule'
+          src="https://calendar.google.com/calendar/embed?src=eceday%40eng.ucsd.edu&ctz=America%2FLos_Angeles&mode=AGENDA&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=1&bgcolor=%2382942e&title=ECE%20Day%20Schedule"
+          class='calendar'
+          scrolling='no'
+        >
         </iframe>
       
       </section>
@@ -73,13 +71,13 @@ function App() {
       <section className='grass-background'>
         <h2 className='brought'>Brought to you by:</h2>
         <div className='logos'>
-          <a target="_blank" href='https://www.ece.ucsd.edu/'><ECE className='ece'/></a>
-          <a target="_blank" href='https://ieeeucsd.org/'><IEEE/></a>
-          <a target="_blank" href='https://eceusc.ucsd.edu/'><ECEUSC /></a>
-          <a target="_blank" href='https://hkn.ucsd.edu/'><HKN/></a>
-          <a target="_blank" href='https://acmucsd.com/'><ACM/></a>
-          <a target="_blank" href='https://www.pibucsd.org/'><PIB/></a>
-          <a target="_blank" href='https://tbp.ucsd.edu/'><TBP/></a>
+          <a href='https://www.ece.ucsd.edu/'><ECE className='ece'/></a>
+          <a href='https://ieeeucsd.org/'><IEEE/></a>
+          <a href='https://eceusc.ucsd.edu/'><ECEUSC /></a>
+          <a href='https://hkn.ucsd.edu/'><HKN/></a>
+          <a href='https://acmucsd.com/'><ACM/></a>
+          <a href='https://www.pibucsd.org/'><PIB/></a>
+          <a href='https://tbp.ucsd.edu/'><TBP/></a>
         </div>
       </section>
       <div className='contact-float'>
