@@ -85,7 +85,7 @@ function App() {
       <div className='contact-float'>
         <div id='contact' className='contact'>Have a question?</div>
         <a href="mailto:eceday@eng.ucsd.edu">
-          Click this to email us!
+          Email us! eceday@eng.ucsd.edu
         </a>
       </div>
     </Fragment>
