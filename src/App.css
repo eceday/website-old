@@ -181,6 +181,12 @@ a:-webkit-any-link{
     clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 25px 50%, 0 0);
     overflow: visible;
 }
+.contact-float{
+    display: flex;
+}
+.contact{
+    margin-right: 40px;
+}
 .text{
     position: inherit;
     left: 0;
@@ -253,9 +259,12 @@ a:-webkit-any-link{
 .logos>.ece{
     width:100%;
     max-width: 720px;
+    height: 200px;
 }
 .logos>*{
-    height: fit-content;
-    max-width: 40%;
-    padding: 10px;
+    text-align: center;
+}
+.logos>*>*{
+    height: 200px;
+    max-width: 90%;
 }

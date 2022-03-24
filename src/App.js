@@ -73,19 +73,19 @@ function App() {
       <section className='grass-background'>
         <h2 className='brought'>Brought to you by:</h2>
         <div className='logos'>
-          <ECE className='ece'/>
-          <IEEE/>
-          <ECEUSC/>
-          <HKN/>
-          <ACM/>
-          <PIB/>
-          <TBP/>
+          <a target="_blank" href='https://www.ece.ucsd.edu/'><ECE className='ece'/></a>
+          <a target="_blank" href='https://ieeeucsd.org/'><IEEE/></a>
+          <a target="_blank" href='https://eceusc.ucsd.edu/'><ECEUSC /></a>
+          <a target="_blank" href='https://hkn.ucsd.edu/'><HKN/></a>
+          <a target="_blank" href='https://acmucsd.com/'><ACM/></a>
+          <a target="_blank" href='https://www.pibucsd.org/'><PIB/></a>
+          <a target="_blank" href='https://tbp.ucsd.edu/'><TBP/></a>
         </div>
       </section>
       <div className='contact-float'>
-        <div id='contact'>have a question? contact us!</div>
+        <div id='contact' className='contact'>Have a question?</div>
         <a href="mailto:eceday@eng.ucsd.edu">
-          email
+          Click this to email us!
         </a>
       </div>
     </Fragment>
