@@ -192,6 +192,7 @@ a:-webkit-any-link{
     overflow: visible;
 }
 .contact-float{
+    margin: 17px;
     display: flex;
 }
 .contact{
